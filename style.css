@@ -86,3 +86,43 @@ body {
 .summary-item p {
     margin-top: 0px;
 }
+
+.detail-chart{
+    padding-left: 20px;
+    display: block;
+}
+
+h1{
+    color: #7EB8F1;
+    font-size: 64px;
+}
+
+p{
+    font-size: 36px;
+    color: #757373;
+}
+
+.img-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.segment-category{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: blue;
+    text-decoration: none;
+}
+
+.barchart-logo{
+    width: 24px;
+    height: 24px;
+    
+}
+
+
