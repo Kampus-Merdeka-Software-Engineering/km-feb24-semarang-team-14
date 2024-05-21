@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperStore... Dashboard Team 14 Semarang</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="header-section">
@@ -19,7 +20,20 @@
     </div>
     <div class="homepage-dashboard">
         <div class="data-section">
-            <img src="assets/img/Profit_LineChart-removebg-preview(1) 2.png" class="image-homepage-dashboard">
+            <div class="score-card">
+                <div class="profit">
+                    <h2>PROFIT</h2>
+                    <h1>121.408</h1>
+                </div>
+                <div class="sales">
+                    <h2>SALES</h2>
+                    <h1>1.130.101</h1>
+                </div>
+            </div>
+            <div class="line-chart">
+                <canvas id="myChart"></canvas>
+            </div>
+            <script src="script.js"></script>
             <p>The Super Store Data obtained from all orders from order date to ship date, starting from January 03, 2014 to December 30, 2017, Profit at superstores always increases at the end of the year and decreases at the beginning of the year</p>
         </div>
         <div class="summary-section">
