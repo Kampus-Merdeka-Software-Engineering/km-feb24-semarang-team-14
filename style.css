@@ -3,8 +3,18 @@
 body {
     margin: 0;
     font-family: 'Satoshi', sans-serif;
+    color: #FFFCFC;
 }
 
+/* General Text Colors */
+h1, h2, .data-section p {
+    color: #757373;
+}
+
+.data-section p {
+    font-size: 20px;
+}
+/* Header Section */
 .header-section {
     display: flex;
     justify-content: space-between;
@@ -14,27 +24,15 @@ body {
     box-shadow: 0 15px 15px rgba(0,0,0,0.25);
 }
 
-.homepage-dashboard {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    /* margin-bottom: 20px; */
-
+/* Logo and Navigation */
+.logo-header, .nav-header {
+    display: flex;
+    align-items: center;
 }
 
 .logo-header {
-    display: flex;
-    align-items: center;
     width: 60px;
     height: 60px;
-    margin-left: 5px;
-}
-
-.image-homepage-dashboard {
-    margin-top: 10px;
-    max-width: 80%;
-    height: auto;
 }
 
 .logo-text {
@@ -44,8 +42,6 @@ body {
 }
 
 .nav-header {
-    display: flex;
-    align-items: center;
     margin-right: 50px;
 }
 
@@ -61,43 +57,86 @@ body {
     text-decoration: none;
 }
 
-.data-section p {
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-bottom: 0px;
-    color: #757373;
+/* Homepage Dashboard */
+.homepage-dashboard {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
+/* Score Card Section */
+.score-card {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.profit h1, .sales h1 {
+    font-size: 45px; 
+    margin-top: 0%;
+}
+
+.profit h2, .sales h2 {
+    font-size: 30px; 
+    margin-bottom: 0%;
+}
+
+/* Summary Section */
 .summary-section {
     display: flex;
     justify-content: center;
     color: #7EB8F1;
+    margin-top: 0px;
 }
 
 .summary-item {
     text-align: center;
     margin: 0 20px;
+    font-size: 180%;
 }
 
 .summary-item h3 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .summary-item p {
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
-.detail-chart{
-    padding-left: 20px;
-    display: block;
+/* Data Section */
+.data-section p {
+    margin: 0 90px;
 }
 
-h1{
+.data-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-chart {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.line-chart canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.detail-chart h1{
     color: #7EB8F1;
     font-size: 64px;
 }
 
-p{
+.detail-chart {
+margin: 0px 30px 0px 30px;
+}
+.detail-chart p{
     font-size: 36px;
     color: #757373;
 }
@@ -114,15 +153,14 @@ p{
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 18px;
+}
+
+.segment-category h2 {
+    font-size: 27px;
     color: blue;
-    text-decoration: none;
 }
 
 .barchart-logo{
     width: 24px;
-    height: 24px;
-    
+    height: 24px;   
 }
-
-
