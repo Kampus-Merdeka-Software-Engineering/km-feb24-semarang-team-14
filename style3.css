@@ -1,0 +1,176 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+body {
+  margin: 0;
+  font-family: "Satoshi", sans-serif;
+  color: #757373;
+  background-color: #fffcfc;
+}
+
+/* General Text Colors */
+h1,
+h2,
+.data-section p {
+  color: #757373;
+}
+
+.data-section p {
+  font-size: 20px;
+}
+/* Header Section */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Logo and Navigation */
+.logo-header, .nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #7EB8F1;
+    margin-left: 10px;
+}
+
+.nav-header {
+    margin-right: 50px;
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #B174E2;
+    text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+/* Homepage Dashboard */
+.homepage-dashboard {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.data-section {
+  margin: 20px 0;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #7eb8f1;
+  color: white;
+}
+
+.data-table td {
+  color: #333;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.data-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Chart and Description */
+.container {
+  padding: 20px;
+  text-align: center; /* Center align text and elements inside container */
+}
+
+.chart-container {
+  text-align: center;
+  margin: 40px 0; /* Adjusted margin for more spacing */
+}
+
+.chart-container h2 {
+  color: #6c63ff;
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.chart {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; /* Center the chart */
+  padding: 20px; /* Added padding for spacing */
+  border: 2px solid #6c63ff; /* Added border for visual similarity */
+  border-radius: 10px; /* Added border-radius for rounded corners */
+}
+
+.chart canvas {
+  width: 100%;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px; /* Added margin for spacing */
+  max-width: 600px; /* Set maximum width */
+  margin: 0 auto; /* Center the list */
+}
+
+.description ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-top: 10px; /* Added margin for spacing */
+  text-align: justify; /* Justify text in ordered list */
+  max-width: 600px; /* Set maximum width */
+  margin: 0 auto; /* Center the list */
+}
+
+.list-style {
+    margin-left: 20px; /* Sesuaikan dengan margin yang digunakan oleh <li> */
+    padding-left: 10px; /* Sesuaikan dengan padding yang digunakan oleh <li> */
+    font-family: Arial, sans-serif; /* Contoh jenis font */
+}
