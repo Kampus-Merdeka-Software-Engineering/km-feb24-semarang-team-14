@@ -51,10 +51,19 @@ h1, h2, .data-section p {
     margin-right: 10px;
 }
 
+.nav-item {
+  margin: 0 15px;
+}
+
 .nav-link {
     font-size: 20px;
     color: #B174E2;
     text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
 }
 
 /* Homepage Dashboard */
