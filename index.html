@@ -6,6 +6,8 @@
     <title>SuperStore Dashboard Team 14 Semarang</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="header-section">
@@ -36,9 +38,8 @@
                 </div>
             </div>
             <div class="line-chart">
-                <canvas id="myChart"></canvas>
+                <canvas id="lineChart"></canvas>
             </div>
-            <script src="script.js"></script>
             <p>The Super Store Data obtained from all orders from order date to ship date, starting from January 03, 2014 to December 30, 2017, Profit at superstores always increases at the end of the year and decreases at the beginning of the year</p>
         </div>
         <div class="summary-section">
@@ -64,15 +65,29 @@
             </p>
         </div> 
     </div>
-    <div class="img-detail flex-space-arround">
+    <div class="barchart-detail">
         <div class="segment-category">
-            <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo">
-            <h2>Chart SuperStore By Segment</h2>
+            <div class="barchart-container">
+                <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo">
+                <h2>Chart SuperStore By Segment</h2>    
+            </div>
+            <canvas id="barChartSegment"></canvas>
         </div>
-
         <div class="segment-category">
-            <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo">
-            <h2>Chart SuperStore By Category</h2>
+            <div class="barchart-container">
+                <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo">
+                <h2>Chart SuperStore By Category</h2>
+            </div>
+            <canvas id="barChartCategory"></canvas>
+        </div>
+    </div>
+    <div class="geochart-detail">
+        <div class="geochart">
+            <div class="geochart-container">
+                <img src="assets/img/Group 402.png" alt="geochart" class="geochart-logo">
+                <h2>Chart SuperStore By State Geografis</h2>
+            </div>
+            <canvas id="geoChart"></canvas>
         </div>
     </div>
 </body>
