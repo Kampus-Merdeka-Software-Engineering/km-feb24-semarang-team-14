@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
   // Memuat file JSON
-  const superstoreData = await loadJSON("dataset/superstore.json");
+  const superstoreData = await loadJSON("../dataset/superstore.json");
 
   const maxRows = 10;
   const limitedData = superstoreData.slice(0, maxRows);
