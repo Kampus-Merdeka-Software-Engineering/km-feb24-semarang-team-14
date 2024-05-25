@@ -18,11 +18,11 @@
         <ul class="nav-menu">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="datasetPage/dataset.html" class="nav-link">Dataset</a></li>
-        <li class="nav-item"><a href="detailPage/segment/detailSegment.html" class="nav-link">Detail chart</a></li>
+        <li class="nav-item"><a href="#detailchart-section" class="nav-link">Detail chart</a></li>
         </ul>
         <div class="nav-header">
             <img src="assets/img/Standard Collection 0.png" alt="" class="nav-icon">
-            <a href="#about-us" class="nav-link">About Us</a>
+            <a href="#footer-section" class="nav-link">About Us</a>
         </div>
     </div>
     <div class="homepage-dashboard">
@@ -53,7 +53,7 @@
             </div>
         </div>
     </div>
-    <div class="detail-chart">
+    <div class="detail-chart" id="detailchart-section">
         <div>
             <h1>
                 Detail chart of the superstore dashboard
@@ -68,15 +68,15 @@
     <div class="barchart-detail">
         <div class="segment-category">
             <div class="barchart-container">
-                <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo">
-                <h2>Chart SuperStore By Segment</h2>    
+                <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo" href="detailPage/segment/detailSegment.html">
+                <h2>SuperStore By Segment</h2>    
             </div>
             <canvas id="barChartSegment"></canvas>
         </div>
         <div class="segment-category">
             <div class="barchart-container">
                 <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo">
-                <h2>Chart SuperStore By Category</h2>
+                <h2 href="detailPage/segment/detailSegment.html" id="clickable-text">Chart SuperStore By Category</h2>
             </div>
             <canvas id="barChartCategory"></canvas>
         </div>
@@ -92,16 +92,9 @@
     </div>
     <br>
     <br>
-
-    <div class="footer">
+    <div class="footer" id="footer-section">
         <h2>About Us</h2>
-        <div class="team">
-            <div class="member">
-                <div class="highlight">
-                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
-                </div>
-                <p>Nugroho Adi Wirapratama</p>
-            </div>
+        <div class="container-up">
             <div class="member">
                 <div class="normal">
                     <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
@@ -114,61 +107,70 @@
                 </div>
                 <p>Nugroho Adi Wirapratama</p>
             </div>
-            <div class="member">
-                <div class="normal">
-                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
-                </div>
-                <p>Nugroho Adi Wirapratama</p>
-            </div>
-            <div class="member">
-                <div class="normal">
-                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
-                </div>
-                <p>Nugroho Adi Wirapratama (Manager)</p>
-            </div>
-            <div class="member">
-                <div class="normal">
-                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
-                </div>
-                <p>Nugroho Adi Wirapratama</p>
-            </div>
-            <div class="member">
-                <div class="normal">
-                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
-                </div>
-                <p>Nugroho Adi Wirapratama</p>
-            </div>
-            <div class="member">
-                <div class="normal">
-                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
-                </div>
-                <p>Nugroho Adi Wirapratama</p>
-            </div>
-            <div class="member">
-                <div class="normal">
-                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
-                </div>
-                <p>Nugroho Adi Wirapratama</p>
-            </div>
-            <div class="member">
-                <div class="normal">
-                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
-                </div>
-                <p>Nugroho Adi Wirapratama</p>
-            </div>
-            
         </div>
-        <div class="center-footer">
-            <div class="normal">
-                <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+        <div class="container-mid">
+            <div class="member">
+                <div class="normal">
+                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+                </div>
+                <p>Nugroho Adi Wirapratama</p>
             </div>
-            <p>Nugroho Adi Wirapratama</p>
+            <div class="member">
+                <div class="normal">
+                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+                </div>
+                <p>Nugroho Adi Wirapratama</p>
+            </div>
+            <div class="member">
+                <div class="normal">
+                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+                </div>
+                <p>Nugroho Adi Wirapratama</p>
+            </div>
+            <div class="member">
+                <div class="normal">
+                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+                </div>
+                <p>Nugroho Adi Wirapratama</p>
+            </div>
+            <div class="member">
+                <div class="normal">
+                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+                </div>
+                <p>Nugroho Adi Wirapratama</p>
+            </div>
         </div>
-        <div class="center-footer">
-            <div class="normal">
-                <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+        <div class="container-mid">
+            <div class="member">
+                <div class="normal">
+                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+                </div>
+                <p>Nugroho Adi Wirapratama</p>
             </div>
-            <p>Nugroho Adi Wirapratama</p>
+            <div class="member">
+                <div class="normal">
+                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+                </div>
+                <p>Nugroho Adi Wirapratama</p>
+            </div>
+            <div class="member">
+                <div class="normal">
+                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+                </div>
+                <p>Nugroho Adi Wirapratama</p>
+            </div>
+            <div class="member">
+                <div class="normal">
+                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+                </div>
+                <p>Nugroho Adi Wirapratama</p>
+            </div>
+            <div class="member">
+                <div class="normal">
+                    <img src="https://via.placeholder.com/80" alt="Nugroho Adi Wirapratama">
+                </div>
+                <p>Nugroho Adi Wirapratama</p>
+            </div>
         </div>
     </div>
 
