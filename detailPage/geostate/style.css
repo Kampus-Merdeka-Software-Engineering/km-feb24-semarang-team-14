@@ -5,9 +5,7 @@ body {
   font-family: "Satoshi", sans-serif;
   color: #757373;
   background-color: #fffcfc;
-  
 }
-
 a{
   text-decoration: none;
 }
@@ -33,31 +31,30 @@ h2,
 }
 
 /* Logo and Navigation */
-.logo-header,
-.nav-header {
-  display: flex;
-  align-items: center;
+.logo-header, .nav-header {
+    display: flex;
+    align-items: center;
 }
 
 .logo-header {
-  width: 60px;
-  height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 .logo-text {
-  font-size: 24px;
-  color: #7eb8f1;
-  margin-left: 10px;
+    font-size: 24px;
+    color: #7EB8F1;
+    margin-left: 10px;
 }
 
 .nav-header {
-  margin-right: 50px;
+    margin-right: 50px;
 }
 
 .nav-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .nav-item {
@@ -65,9 +62,9 @@ h2,
 }
 
 .nav-link {
-  font-size: 20px;
-  color: #b174e2;
-  text-decoration: none;
+    font-size: 20px;
+    color: #B174E2;
+    text-decoration: none;
 }
 
 .nav-menu {
@@ -90,7 +87,6 @@ h2,
 
 .data-section {
   margin: 20px 0;
-  font-size: 12px;
 }
 
 .table-container {
@@ -128,4 +124,56 @@ h2,
 
 .data-table tr:hover {
   background-color: #ddd;
+}
+
+/* Chart and Description */
+.container {
+  padding: 20px;
+  text-align: center; 
+}
+
+.chart-container {
+  text-align: center;
+  margin: 40px 0; 
+}
+
+.chart-container h2 {
+  color: #6c63ff;
+  margin-bottom: 20px; 
+}
+
+.chart {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; 
+  padding: 20px; 
+  border: 2px solid #6c63ff; 
+  border-radius: 10px; 
+}
+
+.chart canvas {
+  width: 100%;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px; 
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.description ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-top: 10px; 
+  text-align: justify; 
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.list-style {
+    margin-left: 20px; 
+    padding-left: 10px; 
+    font-family: Arial, sans-serif; 
 }

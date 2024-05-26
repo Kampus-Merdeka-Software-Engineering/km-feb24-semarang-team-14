@@ -11,10 +11,12 @@
 </head>
 <body>
     <div class="header-section">
-        <div class="logo-header">
-            <img src="assets/img/image.png" alt="Logo" class="logo-header">
-            <p class="logo-text">SuperStore</p>
-        </div>
+        <a href="index.html">
+            <div class="logo-header">
+                <img src="assets/img/image.png" alt="Logo" class="logo-header">
+                <p class="logo-text">SuperStore</p>
+            </div>
+        </a>
         <ul class="nav-menu">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="datasetPage/dataset.html" class="nav-link">Dataset</a></li>
@@ -69,14 +71,18 @@
         <div class="segment-category">
             <div class="barchart-container">
                 <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo" href="detailPage/segment/detailSegment.html">
-                <h2>SuperStore By Segment</h2>    
+                <a href="detailPage/segment/detailSegment.html">
+                    <h2>SuperStore By Segment</h2>
+                </a>
             </div>
             <canvas id="barChartSegment"></canvas>
         </div>
         <div class="segment-category">
             <div class="barchart-container">
                 <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo">
-                <h2 href="detailPage/segment/detailSegment.html" id="clickable-text">Chart SuperStore By Category</h2>
+                <a href="detailPage/category/detailCategory.html">
+                    <h2>Chart SuperStore By Category</h2>
+                </a>
             </div>
             <canvas id="barChartCategory"></canvas>
         </div>
@@ -85,7 +91,9 @@
         <div class="geochart">
             <div class="geochart-container">
                 <img src="assets/img/Group 402.png" alt="geochart" class="geochart-logo">
-                <h2>Chart SuperStore By State Geografis</h2>
+                <a href="detailPage/geostate/detailGeostate.html">
+                    <h2>Chart SuperStore By State Geografis</h2>
+                </a>
             </div>
             <canvas id="geoChart"></canvas>
         </div>
