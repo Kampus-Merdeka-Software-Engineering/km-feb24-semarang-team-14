@@ -6,7 +6,9 @@ body {
   color: #757373;
   background-color: #fffcfc;
 }
-
+a{
+  text-decoration: none;
+}
 /* General Text Colors */
 h1,
 h2,
