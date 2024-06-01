@@ -35,6 +35,17 @@ document.addEventListener('DOMContentLoaded', function () {
             const ctx_line = document.getElementById('lineChart').getContext('2d');
             const lineChart = new Chart(ctx_line, {
                 type: 'line',
+                options: {
+                    animation: true,
+                    plugins: {
+                      legend: {
+                        display: true
+                      },
+                      tooltip: {
+                        enabled: true
+                      }
+                    }
+                  },
                 data: {
                     labels: formattedDates,
                     datasets: [
