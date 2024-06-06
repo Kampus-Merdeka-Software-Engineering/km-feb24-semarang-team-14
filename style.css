@@ -290,6 +290,128 @@ canvas {
     border-radius: 10px;
 }
 
+.filters{
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    gap: 150px;
+    color: #757373;
+}
+
+#month-filter, #state-filter {
+    width: 150px;
+    height: 38px;
+    position: relative;
+    bottom: 8px;
+    left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* General Chart Styles */
+.chart {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.chart canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Phone Portrait */
+@media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    .chart {
+        margin: 20px 0;
+    }
+    .filters {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 20px;
+        margin: 10px; /* Tambahkan margin */
+    }
+    #month-filter, #state-filter {
+        width: 60%;
+        height: 30px; /* Kecilkan bar filter */
+        font-size: 10px;
+    }
+    .chart canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* Phone Landscape */
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    .chart {
+        margin: 0 auto;
+    }
+    .filters {
+        flex-direction: row;
+        gap: 10px;
+        font-size: 18px;
+        margin: 10px; /* Tambahkan margin */
+    }
+    #month-filter, #state-filter {
+        width: 45%;
+        height: 30px; /* Kecilkan bar filter */
+        font-size: 14px;
+    }
+    .chart canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .chart {
+        margin: 0 auto;
+    }
+    .filters {
+        flex-direction: row;
+        gap: 20px;
+        font-size: 20px;
+        margin: 10px; /* Tambahkan margin */
+    }
+    #month-filter, #state-filter {
+        width: 150px;
+        height: 30px; /* Kecilkan bar filter */
+        font-size: 16px;
+    }
+    .chart canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .chart {
+        margin: 0 auto;
+    }
+    .filters {
+        flex-direction: row;
+        gap: 20px;
+        font-size: 20px;
+        margin: 10px; /* Tambahkan margin */
+    }
+    #month-filter, #state-filter {
+        width: 150px;
+        height: 30px; /* Kecilkan bar filter */
+        font-size: 16px;
+    }
+    .chart canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
 
 /* Phone Portrait */
 @media (min-width: 320px) and (max-width: 767px) {
@@ -517,42 +639,3 @@ canvas {
     }
 }
 
-/* General Chart Styles */
-.chart {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.chart canvas {
-    width: 100% !important;
-    height: auto !important;
-}
-
-/* Phone Portrait */
-@media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
-    .chart {
-        margin: 20px 0;
-    }
-}
-
-/* Phone Landscape */
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    .chart {
-        margin: 0 auto;
-    }
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .chart {
-        margin: 0 auto;
-    }
-}
-
-/* Tablet Landscape */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .chart {
-        margin: 0 auto;
-    }
-}
