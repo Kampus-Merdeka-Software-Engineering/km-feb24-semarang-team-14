@@ -185,10 +185,11 @@ h2,
     align-items: center; /* Align items to the center vertically */
     justify-content: space-between; /* Distribute space between logo and nav */
   }
-  .logo-header {
+ .logo-header {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align logo to the left */
+    justify-content: center;
+    margin-bottom: 10px;
   }
   .nav-header {
     margin-right: 0;

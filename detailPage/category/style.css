@@ -190,7 +190,8 @@ a{
   .logo-header {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align logo to the left */
+    justify-content: center;
+    margin-bottom: 10px;
   }
   .nav-header {
     margin-right: 0;
