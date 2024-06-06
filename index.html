@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperStore Dashboard Team 14 Semarang</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style-phone.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo"></script>
     <script src="script.js"></script>
@@ -18,9 +19,15 @@
             </div>
         </a>
         <ul class="nav-menu">
-        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="datasetPage/dataset.html" class="nav-link">Dataset</a></li>
-        <li class="nav-item"><a href="#detailchart-section" class="nav-link">Detail chart</a></li>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="datasetPage/dataset.html" class="nav-link">Dataset</a>
+            </li>
+            <li class="nav-item">
+                <a href="#detailchart-section" class="nav-link">Detail chart</a>
+            </li>
         </ul>
         <div class="nav-header">
             <img src="assets/img/Standard Collection 0.png" alt="" class="nav-icon">
@@ -66,6 +73,20 @@
                Below are the details of the chart :
             </p>
         </div> 
+    </div>
+    <div class="filters">
+        <div class="month">
+            <label for="month-filter">Month:</label>
+            <select id="month-filter">
+                <option value="">All</option>
+            </select>
+        </div>
+        <div class="state">
+            <label for="state-filter">State:</label>
+            <select id="state-filter">
+                <option value="">All</option>
+            </select>
+        </div>
     </div>
     <div class="barchart-detail">
         <div class="segment-category">
@@ -181,6 +202,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>
