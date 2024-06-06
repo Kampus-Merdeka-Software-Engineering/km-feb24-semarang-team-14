@@ -516,3 +516,43 @@ canvas {
         gap: 50px;
     }
 }
+
+/* General Chart Styles */
+.chart {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.chart canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Phone Portrait */
+@media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    .chart {
+        margin: 20px 0;
+    }
+}
+
+/* Phone Landscape */
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    .chart {
+        margin: 0 auto;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .chart {
+        margin: 0 auto;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .chart {
+        margin: 0 auto;
+    }
+}
