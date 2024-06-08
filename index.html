@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperStore Dashboard Team 14 Semarang</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="style-phone.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo"></script>
     <script src="script.js"></script>
@@ -39,11 +38,11 @@
             <div class="score-card">
                 <div class="profit">
                     <h2>PROFIT</h2>
-                    <h1>121.408</h1>
+                    <h1 id="profitValue">0</h1>
                 </div>
                 <div class="sales">
                     <h2>SALES</h2>
-                    <h1>1.130.101</h1>
+                    <h1 id="salesValue">0</h1>
                 </div>
             </div>
             <div class="line-chart">
@@ -69,7 +68,7 @@
             </h1>
         </div>
         <div>
-            <p>The SuperStore dashboard has several chart details including, Chart By Segment, Category, Geographic And Table. <br><br>
+            <p>The SuperStore dashboard has several chart details including, Chart By Segment, Category, Geographic And Table. <br></br>
                Below are the details of the chart :
             </p>
         </div> 
@@ -78,13 +77,13 @@
         <div class="month">
             <label for="month-filter">Month:</label>
             <select id="month-filter">
-                <option value="">All</option>
+                <option class="box-month-filter" value="">All</option>
             </select>
         </div>
         <div class="state">
             <label for="state-filter">State:</label>
             <select id="state-filter">
-                <option value="">All</option>
+                <option class="box-state-filter" value="">All</option>
             </select>
         </div>
     </div>
