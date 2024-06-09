@@ -6,27 +6,29 @@
         <title>SuperStore Dashboard Team 14 Semarang</title>
         <link rel="stylesheet" href="style.css" />
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
         <script src="script.js"></script>
       </head>
       <body>
-        <div class="header-section">
-          <a href="../../index.html">
-            <div class="logo-header">
-              <img src="../../assets/img/image.png" alt="Logo" class="logo-header" />
+        <nav class="navbar">
+            <a href="../../index.html" class="navbar-logo">
+              <img src="../../assets/img/image.png" alt="Logo" class="logo-brand" />
               <p class="logo-text">SuperStore</p>
-            </div>
           </a>
-          <ul class="nav-menu">
-            <li class="nav-item"><a href="../../index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="../../datasetPage/dataset.html" class="nav-link">Dataset</a></li>
-            <li class="nav-item"><a href="../../index.html#detailchart-section" class="nav-link">Detail chart</a></li>
-          </ul>
-          <div class="nav-header">
-            <img src="../../assets/img/Standard Collection 0.png" alt="" class="nav-icon" />
-            <a href="../../index.html#footer-section" class="nav-link">About Us</a>
+          <div class="navbar-nav">
+            <a href="../../index.html">Home</a>
+            <a href="../../datasetPage/dataset.html">Dataset</a>
+            <a href="../../index.html#detailchart-section">Detail Chart</a>
+            <a href="../../index.html#footer-team">
+                <img src="../../assets/img/Standard Collection 0.png" alt="Logo" class="logo-about">Our Team
+            </a>    
           </div>
+          <div class="navbar-extra">
+              <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+          </div>
+        </nav>
+      <script>feather.replace();</script>
+      <script src="index.js"></script>
         </div>
     <div class="container">
         <div class="chart-container">

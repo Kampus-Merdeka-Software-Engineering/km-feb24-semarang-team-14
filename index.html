@@ -7,32 +7,29 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="header-section">
-        <a href="index.html">
-            <div class="logo-header">
-                <img src="assets/img/image.png" alt="Logo" class="logo-header">
-                <p class="logo-text">SuperStore</p>
-            </div>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">
+            <img src="assets/img/image.png" alt="Logo" class="logo-brand" />
+            <p class="logo-text">SuperStore</p>
         </a>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="datasetPage/dataset.html" class="nav-link">Dataset</a>
-            </li>
-            <li class="nav-item">
-                <a href="#detailchart-section" class="nav-link">Detail chart</a>
-            </li>
-        </ul>
-        <div class="nav-header">
-            <img src="assets/img/Standard Collection 0.png" alt="" class="nav-icon">
-            <a href="#footer-section" class="nav-link">About Us</a>
+        <div class="navbar-nav">
+            <a href="index.html">Home</a>
+            <a href="datasetPage/dataset.html">Dataset</a>
+            <a href="#detailchart-section">Detail Chart</a>
+            <a href="#footer-team">
+                <img src="assets/img/Standard Collection 0.png" alt="Logo" class="logo-about">Our Team
+            </a>    
         </div>
-    </div>
+        <div class="navbar-extra">
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    <script>feather.replace();</script>
+    <script src="index.js"></script>
     <div class="homepage-dashboard">
         <div class="data-section">
             <div class="score-card">
@@ -44,11 +41,11 @@
                     <h2>SALES</h2>
                     <h1 id="salesValue">0</h1>
                 </div>
-            </div>
-            <div class="line-chart">
-                <canvas id="lineChart"></canvas>
-            </div>
-            <p>The Super Store Data obtained from all orders from order date to ship date, starting from January 03, 2014 to December 30, 2017, Profit at superstores always increases at the end of the year and decreases at the beginning of the year</p>
+          </div>
+        <div class="line-chart">
+            <canvas id="lineChart"></canvas>
+        </div>
+        <p>The Super Store Data obtained from all orders from order date to ship date, starting from January 03, 2014 to December 30, 2017, Profit at superstores always increases at the end of the year and decreases at the beginning of the year</p>
         </div>
         <div class="summary-section">
             <div class="summary-item">
@@ -69,7 +66,7 @@
         </div>
         <div>
             <p>The SuperStore dashboard has several chart details including, Chart By Segment, Category, Geographic And Table. <br></br>
-               Below are the details of the chart :
+            Below are the details of the chart :
             </p>
         </div> 
     </div>
@@ -90,12 +87,12 @@
     <div class="barchart-detail">
         <div class="segment-category">
             <div class="barchart-container">
-                <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo" href="detailPage/segment/detailSegment.html">
+                <img src="assets/img/bar-chart-logo.png" alt="barchart" class="barchart-logo">
                 <a href="detailPage/segment/detailSegment.html">
                     <h2>SuperStore By Segment</h2>
                 </a>
-            </div>
-            <canvas id="barChartSegment"></canvas>
+          </div>
+          <canvas id="barChartSegment"></canvas>
         </div>
         <div class="segment-category">
             <div class="barchart-container">
@@ -118,44 +115,81 @@
             <canvas id="geoChart"></canvas>
         </div>
     </div>
-    <br>
-    <br>
-    <div class="footer" id="footer-section">
-        <h2>About Us</h2>
-        <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade" style="display: block;">
-              <div class="numbertext">1 / 3</div>
-              <img class="img-abt" src="assets/img/gilang_bg.png" style="width:100%">
-              <div class="text">Muhammad Gilang Ramadhan</div>
-            </div>
-
-          
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img class="img-abt" src="assets/img/image.png"  style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img class="img-abt" src="assets/img/image.png"  style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
-            
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-          <br>
-          
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+    <footer>
+        <div class="row primary">
+          <div class="column about" id="team">
+              <h3>Our Team</h3>
+              <div class="slideshow-container">
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides fade" style="display: block;">
+                      <div class="numbertext">1 / 3</div>
+                      <img class="img-abt" src="assets/img/gilang_bg.png" style="width:100%" alt="Gilang">
+                      <div class="text">Muhammad Gilang Ramadhan</div>
+                  </div>
+                  <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img class="img-abt" src="assets/img/image.png"  style="width:100%">
+                      <div class="text">Caption Two</div>
+                  </div>
+                  <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img class="img-abt" src="assets/img/image.png"  style="width:100%">
+                      <div class="text">Caption Three</div>
+                  </div>
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
           </div>
-    </div>
+          <div class="column links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="datasetPage/dataset.html">Dataset</a>
+              </li>
+              <li>
+                <a href="#detailchart-section">Detail Page</a>
+              </li>
+              <li>
+                <a href="#team">Our Team</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#">F.A.Q</a>
+              </li>
+              <li>
+                <a href="#">Cookies Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms Of Service</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column subscribe">
+            <h3>Newsletter</h3>
+            <div>
+              <input id="emailInput" type="email" placeholder="Input Your Email" />
+              <button id="subscribeBtn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="row copyright">
+          <hr>
+          <p class="new-class">Copyright &copy; 2024 RevoU Team 14 Batch 6 Developer</p>
+        </div>
+      </footer>
+      <div id="popup" class="popup">
+        <p>Subscription Successful !!!</p>
+      </div>
 </body>
 </html>

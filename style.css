@@ -1,646 +1,731 @@
-@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url("https://fonts.cdnfonts.com/css/satoshi");
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: 'Satoshi', sans-serif;
-    color: #FFFCFC;
+  margin: 0;
+  font-family: "Satoshi", sans-serif;
+  color: #fffcfc;
+  background-color: #fffcfc;
 }
 
 /* General Text Colors */
-h1, h2, .data-section p {
-    color: #757373;
+h1,
+h2,
+.data-section p {
+  color: #757373;
 }
 
 .data-section p {
-    font-size: 20px;
-}
-/* Header Section */
-.header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-    box-shadow: 0 15px 15px rgba(0,0,0,0.25);
+  font-size: 20px;
 }
 
-/* Logo and Navigation */
-.logo-header, .nav-header {
-    display: flex;
-    align-items: center;
+/* nav-bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
 }
 
-.logo-header {
-    width: 60px;
-    height: 60px;
+.logo-brand {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-about {
+  width: 20px;
+  height: 20px;
 }
 
 .logo-text {
-    font-size: 24px;
-    color: #7EB8F1;
-    margin-left: 10px;
-}
-
-.nav-header {
-    margin-right: 50px;
-}
-
-.nav-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.nav-item {
+  text-decoration: none;
+  color: #7eb8f1;
   margin: 0 15px;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
   display: flex;
+  align-items: center;
 }
 
-.nav-link {
-    font-size: 20px;
-    color: #B174E2;
-    text-decoration: none;
+.navbar .navbar-nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #b174e2;
+  margin: 0 15px;
 }
 
-.nav-menu {
-  display: flex;
-  list-style: none;
+#hamburger-menu {
+  display: none;
 }
 
-/* Homepage Dashboard */
+/* homepage-dashboard class */
 .homepage-dashboard {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
 /* Score Card Section */
 .score-card {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
-.profit h1, .sales h1 {
-    font-size: 45px; 
-    margin-top: 0%;
+.profit h1,
+.sales h1 {
+  font-size: 45px;
+  margin-top: 0%;
 }
 
-.profit h2, .sales h2 {
-    font-size: 30px; 
-    margin-bottom: 0%;
+.profit h2,
+.sales h2 {
+  font-size: 30px;
+  margin-bottom: 0%;
 }
 
 /* Summary Section */
 .summary-section {
-    display: flex;
-    justify-content: center;
-    color: #7EB8F1;
-    margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  color: #7eb8f1;
+  margin-top: 0px;
 }
 
 .summary-item {
-    text-align: center;
-    margin: 0 20px;
-    font-size: 180%;
+  text-align: center;
+  margin: 0 20px;
+  font-size: 180%;
 }
 
 .summary-item h3 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .summary-item p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 /* Data Section */
 .data-section p {
-    margin: 0 90px;
+  margin: 0 90px;
 }
 
 .data-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+/* line chart */
 .line-chart {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .line-chart canvas {
-    width: 100% !important;
-    height: auto !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
+/* detail-chart section */
 .detail-chart {
-    margin: 0px 70px 0px 70px;
+  margin: 0px 70px 0px 70px;
 }
 
-.detail-chart h1{
-    color: #7EB8F1;
-    font-size: 50px;
+.detail-chart h1 {
+  color: #7eb8f1;
+  font-size: 50px;
 }
 
-.detail-chart p{
-    text-align: justify;
-    font-size: 30px;
-    color: #757373;
+.detail-chart p {
+  text-align: justify;
+  font-size: 30px;
+  color: #757373;
 }
 
+/* filters class */
+.filters {
+  display: flex;
+  font-size: 35px;
+  justify-content: center;
+  gap: 150px;
+  color: #757373;
+}
+
+#month-filter,
+#state-filter {
+  width: 150px;
+  height: 38px;
+  position: relative;
+  bottom: 6px;
+  left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* chart detail section */
 .barchart-detail,
-.geochart-detail{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0 20px;
-    padding: 20px;
+.geochart-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 20px;
+  padding: 20px;
 }
 
-.segment-category{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    max-width: 1000px;
-    margin: 0 auto;
+.segment-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .segment-category canvas {
-    width: 100% !important;
-    height: auto !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .segment-category h2 {
-    font-size: 27px;
-    color: blue;
+  font-size: 27px;
+  color: blue;
 }
 
-.barchart-logo{
-    width: 24px;
-    height: 24px;   
-    border: 3px solid #6c63ff;
-    border-radius: 7px;
-    width: 30px;
+.barchart-logo {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #6c63ff;
+  border-radius: 7px;
+  width: 30px;
 }
 
 .barchart-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .geochart-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
 }
 
 .geochart-container h2 {
-    color: blue;
+  color: blue;
 }
 
 .geochart {
-    width: 40%;
-    max-width: 1000px;
-    margin: 0 auto;
+  width: 40%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .geochart canvas {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-.geochart-logo{
-    border: 3px solid #6c63ff;
-    border-radius: 8px;
+.geochart-logo {
+  border: 3px solid #6c63ff;
+  border-radius: 8px;
 }
 
-#barChartSegment, 
-#barChartCategory, 
+#barChartSegment,
+#barChartCategory,
 #geoChart {
-    margin: 0 auto; 
-    padding: 20px; 
-    border: 3px solid #6c63ff; 
-    border-radius: 30px; 
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #6c63ff;
+  border-radius: 30px;
 }
 
 /*Footer*/
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-    border-top-left-radius:40px ;
-    border-top-right-radius:40px ;
+footer {
+  background-color: #030c4d;
+  color: #a7a7a7;
+  font-size: 16px;
+  border-radius: 0%;
+  border-top-left-radius:40px ;
+  border-top-right-radius:40px ;
+}
+footer * {
+  font-family: "Satoshi", serif;
+  box-sizing: border-box;
+  border: none !;
+  outline: none;
+}
+.row {
+  padding: 1em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
 }
 
-.footer h2 {
-    margin-bottom: 30px;
-    font-size: 2em;
+.links ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+  text-align: justify;
 }
 
-.member img {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
+.about h3,
+.links h3,
+.subscribe h3{
+  width: 100%;
+  text-align: left;
+  color: #f6b518;
+  font-weight: bold;
+  font-size: 1.4em;
+  white-space: nowrap;
 }
 
-.container-up{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    
-
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #ffffff;
+  font-weight: 100;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #2a8ded;
+}
+.about h3 {
+  text-align: center;
+  line-height: 0;
+  margin-top: 35px;
+}
+input,
+button {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Satoshi", serif;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+button {
+  background-color: #c7940a;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* button:hover {
+} */
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
 }
 
-.container-mid{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    justify-content: space-around;
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #030c4d;
+  font-weight: 100;
+  font-size: small;
+  color: #ffffff;
 }
 
-.member .normal img {
-    background-color: #f5a623;
-    padding: 10px;
-    border-radius: 10px;
+.copyright p {
+  font-size: 0.9em;
+  text-align: center;
 }
 
-.filters{
-    display: flex;
-    font-size: 35px;
-    justify-content: center;
-    gap: 150px;
-    color: #757373;
+/* Styles for footer-our team */
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+  max-height: 300px;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 200px;
+  position: relative;
+  margin: auto;
 }
 
-#month-filter, #state-filter {
-    width: 150px;
-    height: 38px;
-    position: relative;
-    bottom: 6px;
-    left: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    background-color: #f9f9f9;
-    color: #333;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
+/* Position the "next button" to the right */
+.next {
+  right: -80px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: -80px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f6b518;
+  /* color: rgb(52, 50, 50); */
+  border-style: dotted;
+  font-size: 13px;
+  padding: 21px 50px 50px -1px;
+  position: absolute;
+  bottom: 8px;
+  width: 90%;
+  text-align: center;
+  font-weight: bold;
+  background-color: #030c4d;
+  background-blend-mode: color-burn;
+  margin-left: 10px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+.img-abt {
+  width: 100%;
+  background-color: #f6b518;
+}
+
+/* Copywright tag styles */
+.copywright-tag {
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* pop up notifications */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Satoshi", serif;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  display: none;
+}
+
+/* laptop  start*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* laptop  end*/
 
 /* Phone Portrait */
 @media (min-width: 320px) and (max-width: 767px) {
-    .header-section {
-        flex-direction: column;
-        padding: 10px;
-        align-items: center; 
-        justify-content: space-between; 
-    }
-    .logo-header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-    .nav-header {
-        margin-right: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .nav-link {
-        font-size: 16px;
-        margin-left: 10px;
-    }
+  html {
+    font-size: 62.5%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 20%;
+    right: -100%;
+    background-color: #f5f5f5;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 0px 20px;
+    padding: 1rem 0;
+  }
 
-    .data-section p {
-        font-size: 12px;
-        margin: 20px 20px 0px;
-    }
+  .data-section p {
+    font-size: 12px;
+    margin: 20px 20px 0px;
+  }
 
-    .line-chart {
-        width: 100%;
-        margin: 0 auto;
-    }
+  .line-chart {
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    .hero h1 {
-        font-size: 28px;
-    }
-    .chart {
-        max-width: 100%;
-        margin: 20px 0;
-    }
-    .description {
-        font-size: 14px;
-        margin: 10px 20px;
-    }
-    .nav-item {
-        margin: 5px 0;
-    }
-    .homepage-dashboard {
-        margin: 20px auto 0 auto;
-        padding: 10px;
-        padding-bottom: 0%;
-        text-align: center;
-    }
+  .chart {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+  .description {
+    font-size: 14px;
+    margin: 10px 20px;
+  }
+  .nav-item {
+    margin: 5px 0;
+  }
+  .homepage-dashboard {
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    padding-bottom: 0%;
+    text-align: center;
+  }
 
-    .score-card {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-    }
-    
-    .summary-section {
-        display: flex;
-        gap: 10px;
-        /* margin: 0px 0; */
-    }
+  .score-card {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
 
-    .summary-item{
-        text-align: center;
-        font-size: 100%;
-    }
-    .profit h1, .sales h1 {
-        font-size: 30px;
-    }
-    .profit h2, .sales h2 {
-        font-size: 20px;
-    }
-    .detail-chart {
-        margin: 0px 30px 0px 30px;
-    }
-    .detail-chart h1 {
-        font-size: 25px;
-    }
-    .detail-chart p {
-        font-size: 18px;
-    }
-    .segment-category h2 {
-        font-size: 24px;
-    }
-    .geochart-container h2 {
-        font-size: 24px;
-    }
+  .summary-section {
+    display: flex;
+    gap: 10px;
+  }
 
-    /* Filter Section */
-    .filters {
-        flex-direction: column;
-        gap: 10px;
-        font-size: 20px;
-        margin: 10px 32px;
-    }
+  .summary-item {
+    text-align: center;
+    font-size: 100%;
+  }
+  .profit h1,
+  .sales h1 {
+    font-size: 30px;
+  }
+  .profit h2,
+  .sales h2 {
+    font-size: 20px;
+  }
+  .detail-chart {
+    margin: 0px 30px 0px 30px;
+  }
+  .detail-chart h1 {
+    font-size: 25px;
+  }
+  .detail-chart p {
+    font-size: 18px;
+  }
+  .segment-category h2 {
+    font-size: 24px;
+  }
+  .geochart-container h2 {
+    font-size: 24px;
+  }
 
-    #state-filter{
-        margin-top: 10px;
-        left: 20px;
-    }
-    label {
-        font-size: 18px;
-    }
+  /* Filter Section */
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    margin: 10px 32px;
+  }
 
-    /* Chart Section */
-    .barchart-detail {
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 0;
-        padding: 10px;
-    }
-    .segment-category, .geochart {
-        width: 100%;
-        max-width: 100%;
-        margin: 10px 0;
-    }
-    .segment-category canvas, .geochart canvas {
-        width: 100% !important;
-        height: auto !important;
-    }
-    .barchart-logo, .geochart-logo {
-        width: 40px;
-        height: 40px;
-    }
+  #state-filter {
+    margin-top: 10px;
+    left: 20px;
+  }
+  label {
+    font-size: 18px;
+  }
 
-    /* Footer Section */
-    .footer {
-        padding: 20px 0;
-        text-align: center;
-    }
-    .footer h2 {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-    }
-    .container-up, .container-mid {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .member img {
-        width: 60px;
-        height: 60px;
-    }
-    .member {
-        text-align: center;
-    }
+  /* Chart Section */
+  .barchart-detail {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .segment-category,
+  .geochart {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .segment-category canvas,
+  .geochart canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .barchart-logo,
+  .geochart-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  
+  /* footer */
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+  .column {
+    padding: 1em 0;
+  }
+  .about h3,
+  .links h3,
+  .subscribe h3 {
+    font-size: 1.2em;
+  }
+  .social {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+  .copyright p {
+    font-size: 0.8em;
+  }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .filters {
-        font-size: 30px;
-        margin: 10px;
-        flex-direction: flex;
-        gap: 100px;
-    }
-    #month-filter, #state-filter {
-        width: 150px;
-        height: 30px;
-        font-size: 16px;
-    }
-    .header-section {
-        padding: 20px;
-    }
-    .nav-header {
-        margin-right: 40px;
-    }
-    .nav-link {
-        font-size: 20px;
-    }
-    .data-section p {
-        font-size: 20px;
-    }
-    .description {
-        font-size: 18px;
-    }
-    .score-card {
-        flex-direction: row;
-        gap: 50px;
-    }
-    .summary-section {
-        flex-direction: row;
-        gap: 50px;
-    }
+  .filters {
+    font-size: 30px;
+    margin: 10px;
+    flex-direction: flex;
+    gap: 100px;
+  }
+  #month-filter,
+  #state-filter {
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .navbar {
+    padding: 20px;
+  }
+  .data-section p {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .score-card {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .summary-section {
+    flex-direction: row;
+    gap: 50px;
+  }
 }
-
 
 /* Tablet Landscape */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .filters {
-        flex-direction: row;
-        gap: 10px;
-        font-size: 20px;
-        margin: 10px;
-    }
-    #month-filter, #state-filter {
-        width: 150px;
-        height: 30px; 
-        font-size: 16px;
-    }
-    .header-section {
-        padding: 25px;
-    }
-    .nav-header {
-        margin-right: 50px;
-    }
-    .nav-link {
-        font-size: 22px;
-    }
-    .data-section p {
-        font-size: 22px;
-    }
-    .description {
-        font-size: 20px;
-    }
-    .score-card {
-        flex-direction: row;
-        gap: 50px;
-    }
-    .summary-section {
-        flex-direction: row;
-        gap: 50px;
-    }
+  .filters {
+    flex-direction: row;
+    gap: 10px;
+    font-size: 20px;
+    margin: 10px;
+  }
+  #month-filter,
+  #state-filter {
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .navbar {
+    padding: 25px;
+  }
+  .data-section p {
+    font-size: 22px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .score-card {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .summary-section {
+    flex-direction: row;
+    gap: 50px;
+  }
 }
-
-.mySlides {display: none;}
-img {vertical-align: middle;
-     max-height: 200px;
-    padding: 10px;
-    border-radius: 10px;
-     }
-/* Slideshow container */
-.slideshow-container {
-    max-width: 200px;
-    position: relative;
-    margin: auto;
-    
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: -80px;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .prev{
-    left: -80px;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: rgb(52, 50, 50);
-    font-size: 15px;
-    padding: 21px 50px 50px -1px ;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    background-color: gray;
-    background-blend-mode: color-burn;
-    margin-left: 10px;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-
-  .img-abt{
-    width: 100%;
-    background-color: #f5a623;
-  }
-
-
