@@ -6,21 +6,22 @@ body {
   color: #757373;
   background-color: #fffcfc;
 }
+
+/* General Text Colors */
+h1, h2, .data-section p {
+  color: #757373;
+}
+
 a{
   text-decoration: none;
-}
-/* General Text Colors */
-h1,
-h2,
-.data-section p {
-  color: #757373;
 }
 
 .data-section p {
   font-size: 20px;
 }
-/* Header Section */
-.header-section {
+
+/* nav-bar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,46 +30,39 @@ h2,
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* Logo and Navigation */
-.logo-header, .nav-header {
-    display: flex;
-    align-items: center;
+.logo-brand {
+  width: 50px;
+  height: 50px;
 }
 
-.logo-header {
-    width: 60px;
-    height: 60px;
-}
+.logo-about {
+    width: 20px;
+    height: 20px;
+  }
 
 .logo-text {
-    font-size: 24px;
-    color: #7EB8F1;
-    margin-left: 10px;
-}
-
-.nav-header {
-    margin-right: 50px;
-}
-
-.nav-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.nav-item {
+  text-decoration: none;
+  color: #7EB8F1;
   margin: 0 15px;
 }
 
-.nav-link {
-    font-size: 20px;
-    color: #B174E2;
-    text-decoration: none;
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
-.nav-menu {
-  display: flex;
-  list-style: none;
+.navbar .navbar-nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #b174e2;
+  margin: 0 15px;
+}
+
+#hamburger-menu {
+  display: none;
 }
 
 /* Homepage Dashboard */
@@ -177,65 +171,53 @@ h2,
     font-family: Arial, sans-serif; 
 }
 
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* laptop  end*/
+
 /* Phone */
 @media (min-width: 320px) and (max-width: 767px) {
-  .header-section {
-    flex-direction: column;
-    padding: 10px;
-    align-items: center; /* Align items to the center vertically */
-    justify-content: space-between; /* Distribute space between logo and nav */
+  html {
+    font-size: 62.5%;
   }
- .logo-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+
+  #hamburger-menu {
+    display: inline-block;
   }
-  .nav-header {
-    margin-right: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+  .navbar .navbar-nav{
+    position: absolute;
+    top: 20%;
+    right: -100%;
+    background-color: #f5f5f5;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
   }
-  .nav-link {
-    font-size: 16px;
-    margin-left: 10px; /* Add some space between nav items */
+
+  .navbar .navbar-nav.active {
+    right: 0;
   }
-  .data-section p {
-    font-size: 16px;
-  }
-  .hero h1 {
-    font-size: 28px;
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 0px 20px;
+    padding: 1rem 0;
   }
   .chart {
-    max-width: 100%;
+    max-width: 90%;
   }
   .description {
     font-size: 14px;
-  }
-  .nav-item {
-    margin: 0 5px;
   }
 }
 
 /* Phone Landscape */
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  .header-section {
-    flex-direction: row;
-    padding: 15px;
-  }
-  .nav-header {
-    margin-right: 30px;
-  }
-  .nav-link {
-    font-size: 18px;
-  }
-  .data-section p {
-    font-size: 18px;
-  }
-  .hero h1 {
-    font-size: 32px;
-  }
+
   .chart {
     width: 100%; /* Ensure the chart takes full width */
     height: auto; /* Adjust height to maintain aspect ratio */
@@ -252,21 +234,7 @@ h2,
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .header-section {
-    padding: 20px;
-  }
-  .nav-header {
-    margin-right: 40px;
-  }
-  .nav-link {
-    font-size: 20px;
-  }
-  .data-section p {
-    font-size: 20px;
-  }
-  .hero h1 {
-    font-size: 34px;
-  }
+  
   .chart {
     width: 100%; /* Ensure the chart takes full width */
     height: auto; /* Adjust height to maintain aspect ratio */
@@ -283,21 +251,7 @@ h2,
 
 /* Tablet Landscape */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .header-section {
-    padding: 25px;
-  }
-  .nav-header {
-    margin-right: 50px;
-  }
-  .nav-link {
-    font-size: 22px;
-  }
-  .data-section p {
-    font-size: 22px;
-  }
-  .hero h1 {
-    font-size: 36px;
-  }
+  
   .chart {
     max-width: 100%;
   }

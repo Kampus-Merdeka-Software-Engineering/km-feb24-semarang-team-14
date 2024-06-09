@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new Chart(ctx, {
       type: 'choropleth',
       data: {
-        // labels: map.map(d => d.properties.name),
         labels: chartData.map(d => d.feature),
         datasets: [{
           label: 'Profit by State',
